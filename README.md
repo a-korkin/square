@@ -7,5 +7,6 @@ $ make run
 Plus (+) button to increase size\
 Minus (-) button to decrease size
 
-![example1](https://github.com/a-korkin/square/blob/main/example_1.png?raw=true)
-![example2](https://github.com/a-korkin/square/blob/main/example_2.png?raw=true)
+![example1](./img/example_1.png)
+![example2](./img/example_2.png)
+
