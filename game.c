@@ -16,7 +16,6 @@
 
 SDL_Window *window = NULL;
 SDL_Renderer *renderer = NULL;
-
 bool running = false;
 Square square = { 
     .size = STEP,
@@ -67,6 +66,15 @@ void handle_event(void) {
             case SDLK_RIGHT: square.position.x += STEP; break;
             case SDLK_DOWN: square.position.y += STEP; break;
             case SDLK_LEFT: square.position.x -= STEP; break;
+            case SDLK_KP_PLUS: 
+                square.size += STEP;
+                break;
+            case SDLK_KP_MINUS: 
+                square.size -= STEP; 
+                if (square.size < STEP) { 
+                    square.size = STEP; 
+                }
+                break;
         }
     }
 }
