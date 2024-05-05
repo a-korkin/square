@@ -119,12 +119,14 @@ void draw_square(void) {
     SDL_RenderFillRect(renderer, &rect);
 }
 
-void render(void) {
+void clear_screen(void) {
     SDL_SetRenderDrawColor(renderer, 0xFF, 0xFF, 0xFF, 0xFF);
     SDL_RenderClear(renderer);
+}
 
+void render(void) {
+    clear_screen();
     draw_square();
-
     SDL_RenderPresent(renderer);
 }
 
