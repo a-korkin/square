@@ -3,9 +3,6 @@
 #include <stdlib.h>
 #include <time.h>
 
-#include "./game.h"
-#include "./square.h"
-
 #include <SDL2/SDL_render.h>
 #include <SDL2/SDL_video.h>
 #include <SDL2/SDL.h>
@@ -13,6 +10,9 @@
 #include <SDL2/SDL_error.h>
 #include <SDL2/SDL_keycode.h>
 #include <SDL2/SDL_timer.h>
+
+#include "./game.h"
+#include "./square.h"
 
 SDL_Window *window = NULL;
 SDL_Renderer *renderer = NULL;
